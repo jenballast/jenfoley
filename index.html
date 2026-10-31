@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jen Foley — Product leader, writer, obsessive investigator</title>
+<meta name="description" content="Jen Foley is a Boston-based fractional product leader (Ballast Advisory), writer of The Product of Everything, and grower of 57+ heirloom tomato varieties. Same rigor, different fields.">
+<meta name="author" content="Jen Foley">
+<link rel="canonical" href="https://jenfoley.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jenfoley.com/">
+<meta property="og:title" content="Jen Foley — Product leader, writer, obsessive investigator">
+<meta property="og:description" content="20 years in product, 6 as a fractional PM. Founder of Ballast Advisory. Writes The Product of Everything. Grows 57+ heirloom tomato varieties with roadmap-level rigor.">
+<meta property="og:image" content="https://jenfoley.com/og-image.png">
+<meta property="og:site_name" content="Jen Foley">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jen Foley — Product leader, writer, obsessive investigator">
+<meta name="twitter:description" content="20 years in product, 6 as a fractional PM. Founder of Ballast Advisory. Writes The Product of Everything.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jen Foley",
+  "url": "https://jenfoley.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/jenniferefoley/",
+    "https://jenfoley.substack.com",
+    "https://ballastadvisory.com"
+  ],
+  "jobTitle": "Fractional Product Leader",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Ballast Advisory",
+    "url": "https://ballastadvisory.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "description": "Fractional product leader with 20 years of experience. Founder of Ballast Advisory. Writer of The Product of Everything on Substack."
+}
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EQPSEF25V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6EQPSEF25V');
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%231E1E1C'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23F5F3EE' text-anchor='middle'%3EJF%3C/text%3E%3Ccircle cx='82' cy='72' r='7' fill='%23B5562E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F3EE;
+    --paper-dim: #ECE8DF;
+    --ink: #1E1E1C;
+    --ink-soft: #45443F;
+    --slate: #5B6660;
+    --teal: #1D9E75;
+    --teal-deep: #146B51;
+    --clay: #B5562E;
+    --clay-soft: #E8C9BB;
+    --rule: rgba(30,30,28,0.14);
+    --max-w: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245,243,238,0.88);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+  }
+  .wordmark .dot { color: var(--clay); }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    letter-spacing: 0.01em;
+    transition: color 0.15s ease;
+  }
+  nav a:hover { color: var(--teal-deep); }
+  .nav-toggle { display: none; }
+
+  .nav-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .icon-link:hover {
+    color: var(--teal-deep);
+    transform: translateY(-1px);
+  }
+  .icon-link svg { display: block; }
+
+  @media (max-width: 720px) {
+    nav { display: none; }
+  }
+
+  nav a { position: relative; }
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 2px;
+    background: var(--clay);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  nav a.active { color: var(--ink); }
+  nav a.active::after { transform: scaleX(1); }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal-stagger.in-view > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 88px 0 64px;
+    border-bottom: 1px solid var(--rule);
+  }
+  @keyframes riseIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero .eyebrow { animation: riseIn 0.6s ease both; }
+  .hero h1 { animation: riseIn 0.7s ease 0.08s both; }
+  .hero .hero-sub { animation: riseIn 0.7s ease 0.16s both; }
+  .hero .hero-cta { animation: riseIn 0.7s ease 0.24s both; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--clay);
+    display: inline-block;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(38px, 5.4vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin: 0 0 24px;
+  }
+  h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--teal-deep);
+  }
+  .hero-sub {
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 54ch;
+    margin: 0 0 36px;
+  }
+  .hero-cta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 22px;
+    border-radius: 3px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn-primary:hover { background: var(--teal-deep); transform: translateY(-1px); }
+  .btn-ghost {
+    border-color: var(--rule);
+    color: var(--ink);
+    background: transparent;
+  }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-1px); }
+  .btn-sm { padding: 9px 16px; font-size: 13px; }
+
+  /* ---------- Section shared ---------- */
+  section { padding: 76px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: none; }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(26px, 3.2vw, 34px);
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .section-note {
+    font-size: 14.5px;
+    color: var(--slate);
+    max-width: 34ch;
+    margin: 0;
+    text-align: right;
+  }
+  @media (max-width: 720px) {
+    .section-note { text-align: left; }
+  }
+
+  /* ---------- Work grid ---------- */
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .work-card {
+    background: var(--paper);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  .work-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 0;
+    background: var(--teal);
+    transition: height 0.3s ease;
+  }
+  .work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px -18px rgba(30,30,28,0.35);
+    background: #FAF9F5;
+    z-index: 2;
+  }
+  .work-card:hover::before { height: 100%; }
+  .work-kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+  }
+  .work-card h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .work-card p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0;
+    flex-grow: 1;
+  }
+  .work-link {
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .work-link:hover { color: var(--teal-deep); }
+  .work-link .arrow { transition: transform 0.15s ease; }
+  .work-link:hover .arrow { transform: translateX(3px); }
+
+  @media (max-width: 720px) {
+    .work-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- About ---------- */
+  .about {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .about p { margin: 0 0 18px; color: var(--ink-soft); font-size: 16.5px; }
+  .about p:last-child { margin-bottom: 0; }
+  .about-facts {
+    background: var(--paper-dim);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 26px 28px;
+  }
+  .fact { padding: 14px 0; border-top: 1px solid var(--rule); }
+  .fact:first-child { border-top: none; padding-top: 0; }
+  .fact-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 4px;
+  }
+  .fact-value { font-size: 15px; font-weight: 500; }
+
+  @media (max-width: 860px) {
+    .about { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Testimonials ---------- */
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .quote-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px;
+    background: var(--paper-dim);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .quote-mark {
+    font-family: 'Fraunces', serif;
+    font-size: 44px;
+    line-height: 0.5;
+    color: var(--clay);
+    height: 18px;
+  }
+  .quote-text {
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    margin: 0;
+    flex-grow: 1;
+  }
+  .quote-attr {
+    font-size: 13.5px;
+    margin: 0;
+  }
+  .quote-attr strong { display: block; color: var(--ink); font-weight: 600; }
+  .quote-attr span { color: var(--slate); }
+
+  @media (max-width: 860px) {
+    .quote-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Writing ---------- */
+  .writing-list { display: flex; flex-direction: column; }
+  .writing-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: baseline;
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .writing-item:first-child { border-top: none; }
+  .writing-item:hover .writing-title { color: var(--teal-deep); }
+  .writing-title {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+  }
+  .writing-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--slate);
+    white-space: nowrap;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    padding: 28px 0 64px;
+    border-top: 1px solid var(--rule);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer-cta h2 { margin-bottom: 12px; }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+  }
+  .footer-links a {
+    font-size: 14.5px;
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+  .footer-links a:hover { color: var(--teal-deep); }
+  .fine-print {
+    margin-top: 24px;
+    padding-top: 12px;
+    font-size: 13px;
+    color: var(--slate);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .footer-links { align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="wordmark">Jen Foley<span class="dot">.</span></a>
+    <div class="nav-social">
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://www.linkedin.com/in/jenniferefoley/" class="icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <h1>Product leader by trade.<br>Obsessive <em>investigator</em> by nature.</h1>
+
+    <p class="hero-sub">I've spent 20 years turning ambiguous problems into shipped products — the last six as a fractional PM. Outside of client work, I apply the same instinct for close observation to 57 tomato varieties, the trail network in my backyard, and whatever I'm currently overthinking on Substack.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-head">
+      <h2>What I'm building</h2>
+      <p class="section-note">Client work, community projects, and a few things that started as a hobby and refused to stay one.</p>
+    </div>
+    <div class="work-grid reveal-stagger">
+      <div class="work-card">
+        <span class="work-kicker">Consultancy</span>
+        <h3>Ballast Advisory</h3>
+        <p>Fractional product management for teams that need senior PM thinking without a full-time hire. Recent work spans regulated-industry software, e-commerce, and consumer products — usually somewhere in the messy middle between strategy and shipping.</p>
+        <a href="https://ballastadvisory.com" class="work-link">Visit ballastadvisory.com <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="work-card">
+        <span class="work-kicker">Writing</span>
+        <h3>The Product of Everything</h3>
+        <p>A product person's take on everything else. Short essays on how the discipline of building things well shows up in places that have nothing to do with software.</p>
+        <a href="#writing" class="work-link">Read recent posts <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="work-card">
+        <span class="work-kicker">Passion project</span>
+        <h3>Jen Grows Tomatoes</h3>
+        <p>57+ heirloom varieties, documented with the same rigor I'd bring to a product roadmap — plus a running experiment in AI-augmented growing and selling.</p>
+        <a href="https://jengrowstomatoes.com" class="work-link">See the garden <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="work-card">
+        <span class="work-kicker">Community</span>
+        <h3>South Shore Trails</h3>
+        <p>A directory of the trails I actually walk, built because the good ones are scattered across a dozen town websites and nobody had stitched them together yet.</p>
+        <a href="https://southshoretrails.com" class="work-link">Explore the trails <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="work-card">
+        <span class="work-kicker">Product tool</span>
+        <h3>Seat the Day</h3>
+        <p>A wedding seating chart maker that syncs with the Google Sheet you already have. Drag-and-drop tables, two-way sync, and printable floor plans. Built for couples planning 50–200 guest weddings where spreadsheets stop working but event software is overkill.</p>
+        <a href="https://seattheday.com" class="work-link">See the tool <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="section-head">
+      <h2>What it's like to work with me</h2>
+      <p class="section-note">In their words, not mine.</p>
+    </div>
+    <div class="quote-grid reveal-stagger">
+      <div class="quote-card">
+        <span class="quote-mark">&ldquo;</span>
+        <p class="quote-text">A rare ability to stay calm and clear in complex, high-stakes situations — bringing structure, momentum, and thoughtful decision-making when it mattered most. Any company engaging Jennifer for fractional product leadership will benefit from her experience, judgment, and ability to deliver real progress.</p>
+        <p class="quote-attr"><strong>Joanne Domeniconi</strong><span>Co-Founder, The Grommet</span></p>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">&ldquo;</span>
+        <p class="quote-text">She helped us identify and correct several long-standing organizational inefficiencies within the product team and improved the collaboration between product and engineering. I would bring her back in an instant.</p>
+        <p class="quote-attr"><strong>Diego Concha</strong><span>Consulting CTO</span></p>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">&ldquo;</span>
+        <p class="quote-text">As an engineer working with Jen, I always had clear direction for specific tasks as well as a sense of the overall product direction. Stakeholders always had a clear picture of deliverables, timeline, and progress. I would work with Jen again in a heartbeat.</p>
+        <p class="quote-attr"><strong>Will Mahoney</strong><span>Senior Engineer, The Gnar</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-head">
+      <h2>The short version</h2>
+    </div>
+    <div class="about reveal">
+      <div>
+        <p>I've worked product at companies where "ship it" meant a warehouse full of furniture (Wayfair) and companies where it meant a baby registry someone's entire extended family would use (Babylist). Six years ago I went fractional, and haven't looked back — there's something I like about walking into a new team's mess, understanding it fast, and leaving it better than I found it.</p>
+        <p>That instinct doesn't turn off at 5pm. It's why I've catalogued 57 tomato varieties with more discipline than some product backlogs I've inherited, why I sit on my town's Conservation Commission, and why I can't resist mapping every good trail within twenty minutes of my house. I'm also a longtime food and travel writer, a 30-year South Shore transit rider, and — depending who you ask — either deeply curious or a little too online about all of it.</p>
+        <p>If you're looking for a fractional PM, start at Ballast Advisory. If you're just curious what a product person does with the rest of their attention, you're already in the right place.</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact">
+          <div class="fact-label">Based in</div>
+          <div class="fact-value">Boston, MA — South Shore</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Currently</div>
+          <div class="fact-value">Founder, Ballast Advisory</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Background</div>
+          <div class="fact-value">Wayfair, Babylist, Pivotal Labs, IBM, Cognizant</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Experience</div>
+          <div class="fact-value">20 years in product · 6 fractional</div>
+        </div>
+        <div class="fact">
+          <div class="fact-label">Also</div>
+          <div class="fact-value">Conservation Commission Vice Chair · Etsy dabbler · 30-yr SSA rider</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="section-head">
+      <h2>Recent writing</h2>
+      <a href="https://jenfoley.substack.com/subscribe" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Subscribe on Substack</a>
+    </div>
+    <div class="writing-list reveal-stagger" id="writing-list">
+      <!-- Dynamically populated from Substack RSS feed -->
+    </div>
+    <a href="https://jenfoley.substack.com/archive" class="work-link" style="margin-top: 24px; display: inline-flex;" target="_blank" rel="noopener">All posts on The Product of Everything <span class="arrow">&rarr;</span></a>
+  </section>
+
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-cta">
+        <h2>Let's talk shop —<br>product, tomatoes, or trails.</h2>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:jen@ballastadvisory.com">jen@ballastadvisory.com</a>
+        <a href="https://cal.com/jenfoley">cal.com/jenfoley</a>
+        <a href="https://ballastadvisory.com">ballastadvisory.com</a>
+      </div>
+    </div>
+    <div class="fine-print">
+      <span>&copy; 2026 Jen Foley</span>
+      <span>Boston, Massachusetts</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => io.observe(el));
+
+  // Stagger children delay
+  document.querySelectorAll('.reveal-stagger').forEach(group => {
+    [...group.children].forEach((child, i) => {
+      child.style.transitionDelay = (i * 70) + 'ms';
+    });
+  });
+
+  // Active nav link on scroll
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const sections = [...navLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = '#' + entry.target.id;
+      const link = [...navLinks].find(a => a.getAttribute('href') === id);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  sections.forEach(s => navObserver.observe(s));
+
+  // Smooth-scroll offset for sticky header
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      const y = target.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+  });
+
+  // Load writing from Substack RSS feed
+  async function loadWriting() {
+    try {
+      const response = await fetch('/.netlify/functions/get-substack-feed');
+      if (!response.ok) return;
+
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(text, 'application/xml');
+
+      if (xmlDoc.documentElement.nodeName === 'parsererror') return;
+
+      const items = xmlDoc.querySelectorAll('item');
+      const writingList = document.getElementById('writing-list');
+      if (!writingList) return;
+
+      writingList.innerHTML = '';
+      items.forEach((item, idx) => {
+        const title = item.querySelector('title')?.textContent || '';
+        const link = item.querySelector('link')?.textContent || '';
+        const pubDate = item.querySelector('pubDate')?.textContent || '';
+
+        const dateObj = new Date(pubDate);
+        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).toUpperCase();
+
+        const writingItem = document.createElement('a');
+        writingItem.href = link;
+        writingItem.target = '_blank';
+        writingItem.rel = 'noopener';
+        writingItem.className = 'writing-item';
+        writingItem.style.transitionDelay = (idx * 70) + 'ms';
+
+        writingItem.innerHTML = `
+          <span class="writing-title">${title}</span>
+          <span class="writing-meta">${dateStr}</span>
+        `;
+
+        writingList.appendChild(writingItem);
+      });
+    } catch (error) {
+      console.error('Error loading writing:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadWriting);
+</script>
+</body>
+</html>
