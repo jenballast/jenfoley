@@ -45,12 +45,18 @@
 }
 </script>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EQPSEF25V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-6EQPSEF25V');
+  // Only the live site is measured; localhost and Netlify previews keep the stub above.
+  if (/^(www\.)?jenfoley\.com$/.test(location.hostname)) {
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-6EQPSEF25V';
+    document.head.appendChild(ga);
+  }
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%231E1E1C'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23F5F3EE' text-anchor='middle'%3EJF%3C/text%3E%3Ccircle cx='82' cy='72' r='7' fill='%23B5562E'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
